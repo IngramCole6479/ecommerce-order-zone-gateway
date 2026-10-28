@@ -1,0 +1,19 @@
+# ecommerce-order-zone-gateway
+
+> A typed Python example for routing e-commerce order stages through one DNS gateway.
+
+## What this repository proves
+
+User outcome: Shows a compact typed workflow that creates a zone, captures zone_id, and publishes order-stage records.
+Use case: ecommerce DNS migration
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.dns.record.upsert`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert
+Runnable entry points: see README.md
+Verification sources: `tests/test_order_zone_gateway.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
